@@ -36,6 +36,7 @@ public class Home extends JFrame implements Runnable {
         try{
             Thread.sleep(7000);
             setVisible(false);
+            new Login();
         }
         catch (Exception e){
 
