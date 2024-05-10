@@ -3,8 +3,32 @@ import javax.swing.*;
 
 public class Home extends JFrame implements Runnable {
     Thread th;
+    JLabel lbl1;
+    JLabel lbl2;
+
     Home() {
+
+        lbl1 =new JLabel("SUKKUR IBA");
+        lbl1.setBounds(450,100,250,200);
+        lbl1.setFont(new Font("Times For Roman",Font.BOLD,30));
+        lbl1.setForeground(Color.white);
+        add(lbl1);
+      //  lbl1.setHorizontalAlignment();
         
+        lbl2 =new JLabel("UNIVERSITY");
+        lbl2.setBounds(450,200,250,200);
+        lbl2.setFont(new Font("Times For Roman",Font.BOLD,30));
+        lbl2.setForeground(Color.white);
+        add(lbl2);
+
+        ImageIcon im = new ImageIcon(getClass().getResource("images/logo.jpg"));
+        Image im2 = im.getImage().getScaledInstance(150, 100, Image.SCALE_DEFAULT);
+        ImageIcon im3 = new ImageIcon(im2);
+        JLabel ig = new JLabel(im3);
+        ig.setBounds(40, 20, 150, 100);
+        add(ig);
+
+
         ImageIcon img = new ImageIcon(getClass().getResource("images/university.jpg"));
         Image img2= img.getImage().getScaledInstance(1000,700,Image.SCALE_DEFAULT);
         ImageIcon img3=new ImageIcon(img2);
