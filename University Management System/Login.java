@@ -44,6 +44,7 @@ public class Login extends JFrame implements ActionListener {
         setLayout(null);
         setSize(600, 500);
         setLocation(400, 100);
+        setTitle("Login");
 
         lblUser = new JLabel("Username/Email");
         lblUser.setBounds(130, 200, 100, 20);

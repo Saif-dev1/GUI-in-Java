@@ -1,7 +1,7 @@
 import java.awt.*;
 import javax.swing.*;
 
-public class Home extends JFrame implements Runnable {
+public class Home extends JFrame  {
     Thread th;
     JLabel lbl1;
     JLabel lbl2;
@@ -34,38 +34,38 @@ public class Home extends JFrame implements Runnable {
         ImageIcon img3=new ImageIcon(img2);
         JLabel image = new JLabel(img3);
         add(image);
-        th= new Thread(this);
-        th.start();
+        // th= new Thread(this);
+        // th.start();
         setVisible(true);
 
 
-        int x=1;
-        for(int i=0; i<=600; i+=4, x+=1){
-            setLocation(600-((i+x)/2), 350-(i/2));
-            setSize(i+3*x,i+ x/2);
+        // int x=1;
+        // for(int i=0; i<=600; i+=4, x+=1){
+        //     setLocation(600-((i+x)/2), 350-(i/2));
+        //     setSize(i+3*x,i+ x/2);
 
-            try{
-                Thread.sleep(10);
+        //     try{
+        //         Thread.sleep(10);
 
-            }
-            catch(Exception e){
+        //     }
+        //     catch(Exception e){
 
-            }
-        }
+        //     }
+        // }
     
        
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
-    public void run(){
-        try{
-            Thread.sleep(7000);
-            setVisible(false);
-            new Login();
-        }
-        catch (Exception e){
+    // public void run(){
+    //     try{
+    //         Thread.sleep(7000);
+    //         setVisible(false);
+    //         new Login();
+    //     }
+    //     catch (Exception e){
 
-        }
-    }
+    //     }
+    // }
 
     public static void main(String[] args) {
         
